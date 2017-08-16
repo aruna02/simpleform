@@ -5,7 +5,14 @@
 </head>
 <body>
 <?php
-include 'database.php';
+
+$server='localhost';
+$user='root';
+$password='';
+$dbname='log';
+
+$connection=mysqli_connect($server,$user,$password,$dbname)  ;
+/*include 'database.php';*/
 if(isset($_POST['btn1'])){
 
 $name=$_POST['name'];
