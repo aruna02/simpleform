@@ -23,7 +23,8 @@ $query="INSERT INTO usersignup(name,password) VALUES('$name','$password')";
 }
 
   if( mysqli_query ($connection,$query)) {
-      echo "new record created successfully";
+    include 'nav.php';
+      include 'phpsignup.php';
   } else {
       echo "error creating record " . mysqli_error();
   }
