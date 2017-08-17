@@ -28,7 +28,7 @@ $query="INSERT INTO usersignup(name,password) VALUES('$name','$password')";
   } else {
       echo "error creating record " . mysqli_error();
   }
-
+mysqli_close($connection); 
 
  ?>
 
